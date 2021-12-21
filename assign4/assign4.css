@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(147, 173, 161)
+}
+
+.clock {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.clock img {
+  height: 45%;
+  width: 45%;
+}
+
+.hour {
+  position: absolute;
+  width: 35%;
+  top: 42%;
+  left: 50%;
+  animation: hourspin 10s 20;
+  transform-origin: 0%;
+}
+.minute {
+  position: absolute;
+  width: 37%;
+  top: 40%;
+  left: 50%;
+  transform: rotate(-90deg);
+  animation: clockspin 10s 20;
+  transform-origin: 0%;
+}
+
+
+@keyframes clockspin {
+  from {top: 40%; left: 50%;
+    transform: rotate(270deg);}
+
+  to {top: 40%; left: 50%;
+    transform: rotate(630deg);}
+}
+@keyframes hourspin {
+  from {top: 42%; left: 50%;
+    transform: rotate(0deg);}
+
+  to {top: 42%; left: 50%;
+    transform: rotate(387deg);
+  }
+
+}

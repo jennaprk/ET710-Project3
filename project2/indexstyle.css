@@ -1,0 +1,825 @@
+body {
+  background-color: #EFE1CE;
+}
+.frame {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.heading {
+  display: block;
+  width: 80%;
+  height: 200px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.heading img {
+  border: 3px solid rgb(59, 117, 43);
+  border-radius: 30px;
+  width: 9%;
+  height: auto;
+  margin-left: 20%;
+  animation: spin 5s;
+}
+.heading h1 {
+  color: rgb(59, 117, 43);
+  font-family: "brush script MT";
+  font-size: 55px;
+  margin-left: 33%;
+  margin-top: -9.5%;
+  animation: zoom 5s;
+}
+.heading p {
+  margin-left: 10%;
+  margin-top: -3.5%;
+  font-stretch: semi-expanded;
+  font-size: 20px;
+  font-family: georgia;
+  animation: shift 5s;
+}
+
+.stage {
+  width: 100%;
+  height: 35px;
+  margin-top: -16%;
+  overflow: hidden;
+  position: relative;
+}
+.slide-group {
+  height: 100%;
+  width: 305%;
+  position: absolute;
+  animation: slides 30s infinite;
+  -webkit-animation: slides 10s;
+}
+.slide1 {
+  height: 100%;
+  width: 33%;
+  float: left;
+  font-size: 18px;
+  font-family: georgia;
+  background-color: rgb(148, 189, 104);
+}
+.slide1 p {
+  padding-left: 300px;
+  margin-top: 1%;
+}
+.slide2 {
+  height: 100%;
+  width: 33%;
+  float: left;
+  font-size: 18px;
+  font-family: georgia;
+  background-color: rgb(167, 191, 130);
+}
+.slide2 p {
+  padding-left: 500px;
+  margin-top: 1%;
+}
+.slide3 {
+  height: 100%;
+  width: 33%;
+  float: left;
+  font-size: 18px;
+  font-family: georgia;
+  background-color: rgb(166, 179, 116);
+}
+.slide3 p {
+  padding-left: 550px;
+  margin-top: 1%;
+}
+@keyframes slides {
+  0% {margin-left: 0%; animation-delay: -32s;}
+  50%  {margin-left: -100%; animation-delay: -16s;}
+  80% {margin-left: -200%; animation-delay: -8s;}
+  100%  {margin-left: -300%; animation-delay: -4s;}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  30% {transform: rotate(270deg);}
+  70% {transform: rotate(-360deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes zoom {
+  0% {transform: scale(0); opacity: 0.5;}
+  70% {transform: scale(1.1); opacity: 1;}
+  100% {transform: scale(0.5); opacity: 0.5;}
+}
+@keyframes shift {
+  0% {transform: translateX(0px); opacity: 1;}
+  50% {transform: translateX(250px); opacity: 0.5;}
+  100% {transform: translateX(0px); opacity: 1;}
+}
+
+.container {
+  width: 100%;
+  height: 1076px;
+  position: relative;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container p {
+  width: 40%;
+  height: 100px;
+  background-color: lightgray;
+  border: 5px solid white;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: -38%;
+  font-family: georgia;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.secondcontainer {
+  width: 100%;
+  height: 905px;
+  position: relative;
+}
+.secondcontainer img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+.secondcontainer p {
+  width: 40%;
+  height: 125px;
+  color: lightgray;
+  background-color: black;
+  border: 5px solid white;
+  position: absolute;
+  margin-left: 32%;
+  margin-top: -65%;
+  font-family: georgia;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-family: georgia;
+  margin-left: 2%;
+}
+
+.product1 {
+  width: 30%;
+  height: 500px;
+  margin-left: 3%;
+}
+.product1 img {
+  width: 60%;
+  height: auto;
+  margin-left: 21%;
+  margin-top: 10%;
+}
+.product1 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product1 h3, p {
+  font-family: georgia;
+  text-align: center;
+}
+.button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: georgia;
+  font-size: 12px;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 37%;
+}
+.button:hover {
+  color: gray;
+  background-color: white;
+}
+.myproduct1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct1:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct1:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+
+.openproduct1 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+
+.openproduct1 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct1 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct1 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.detail {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.description {
+  background-color: lightgray;
+  width: 100%;
+  height: 140px;
+}
+.description p {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 1px;
+}
+.openproduct1 img {
+  width: 45%;
+  height: auto;
+  margin-left: 2%;
+  margin-top: -50%;
+}
+
+.closeMod {
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: georgia;
+  font-size: 12px;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 40%;
+}
+.closeMod:hover {
+    color: white;
+    background-color: black;
+}
+
+.product2 {
+  width: 30%;
+  height: 500px;
+  margin-left: 35%;
+  margin-top: -500px;
+}
+.product2 img {
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.product2 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product2 h3, p {
+  font-family: georgia;
+  text-align: center;
+}
+.myproduct2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct2:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct2:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+
+.openproduct2 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+
+.openproduct2 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct2 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct2 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct2 img {
+  width: 45%;
+  height: auto;
+  margin-left: 2%;
+  margin-top: -50%;
+}
+
+.product3 {
+  width: 30%;
+  height: 500px;
+  margin-left: 67%;
+  margin-top: -500px;
+}
+.product3 img {
+  width: 60%;
+  height: auto;
+  margin-left: 21%;
+  margin-top: 10%;
+}
+.product3 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product3 h3, p {
+  font-family: georgia;
+  text-align: center;
+}
+.myproduct3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct3:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct3:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+
+.openproduct3 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+
+.openproduct3 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct3 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct3 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct3 img {
+  width: 45%;
+  height: auto;
+  margin-left: 2%;
+  margin-top: -50%;
+}
+
+.product4 {
+  width: 30%;
+  height: 500px;
+  margin-left: 3%;
+}
+.product4 img {
+  width: auto;
+  height: 50%;
+  margin-left: 15%;
+}
+.product4 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product4 h3, p {
+  font-family: georgia;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.product4 p {
+  padding: 5px;
+}
+.myproduct4 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct4:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct4:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+.openproduct4 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+.openproduct4 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct4 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct4 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct4 img {
+  width: 40%;
+  height: auto;
+  margin-left: 6%;
+  margin-top: -31%;
+}
+.description4 {
+  background-color: lightgray;
+  width: 100%;
+  height: 198px;
+}
+.description4 p {
+  text-align: center;
+  font-family: georgia;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 1px;
+}
+
+.product5 {
+  width: 30%;
+  height: 500px;
+  margin-left: 35%;
+  margin-top: -500px;
+}
+.product5 img {
+  width: auto;
+  height: 50%;
+  margin-left: 15%;
+}
+.product5 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product5 h3, p {
+  font-family: georgia;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.product5 p {
+  padding: 5px;
+}
+.myproduct5 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct5:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct5:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+.openproduct5 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+.openproduct5 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct5 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct5 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct5 img {
+  width: 40%;
+  height: auto;
+  margin-left: 6%;
+  margin-top: -35%;
+}
+.description5 {
+  background-color: lightgray;
+  width: 100%;
+  height: 198px;
+  margin-top: 4%;
+}
+.description5 p {
+  text-align: center;
+  font-family: georgia;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 1px;
+}
+
+.product6 {
+  width: 30%;
+  height: 500px;
+  margin-left: 67%;
+  margin-top: -500px;
+}
+.product6 img {
+  width: auto;
+  height: 50%;
+  margin-left: 15%;
+}
+.product6 h4 {
+  font-family: georgia;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+}
+.product6 h3, p {
+  font-family: georgia;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.product6 p {
+  padding: 5px;
+}
+.myproduct6 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(59, 117, 43, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.myproduct6:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.myproduct6:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: ease-in 0.5s;
+}
+.openproduct6 {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 23%;
+  background-color: white;
+}
+.openproduct6 h3 {
+  font-family: georgia;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+.openproduct6 h4 {
+  font-family: georgia;
+  font-size: 14px;
+  color: rgb(163, 143, 24);
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct6 h2 {
+  font-family: georgia;
+  text-align: left;
+  padding-left: 50%;
+}
+.openproduct6 img {
+  width: 40%;
+  height: auto;
+  margin-left: 6%;
+  margin-top: -33%;
+}
+.description6 {
+  background-color: lightgray;
+  width: 100%;
+  height: 198px;
+  margin-top: 4%;
+}
+.description6 p {
+  text-align: center;
+  font-family: georgia;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 1px;
+}
+
+
+.footersec {
+  width: 100%;
+  height: 450px;
+  background-color: black;
+}
+.helpbox {
+  width: 15%;
+  height: 150px;
+  padding: 5px;
+  color: white;
+  font-family: georgia;
+  font-weight: normal;
+  text-align: center;
+  margin-left: 11%;
+}
+.helpbox p {
+  font-size: 12px;
+}
+.account {
+  width: 15%;
+  height: 150px;
+  padding: 5px;
+  color: white;
+  font-family: georgia;
+  font-weight: normal;
+  text-align: center;
+  margin-left: 31%;
+  margin-top: -160px;
+}
+.account p {
+  font-size: 12px;
+}
+.subscribe {
+  width: 15%;
+  height: 150px;
+  padding: 5px;
+  color: white;
+  font-family: georgia;
+  font-weight: normal;
+  text-align: center;
+  margin-left: 51%;
+  margin-top: -160px;
+}
+.subscribe p {
+  font-size: 12px;
+}
+.member {
+  width: 15%;
+  height: 150px;
+  padding: 5px;
+  color: white;
+  font-family: georgia;
+  font-weight: normal;
+  text-align: center;
+  margin-left: 71%;
+  margin-top: -160px;
+}
+.member p {
+  font-size: 12px;
+}
+
+.connect {
+  margin-left: 68%;
+  margin-top: -10px;
+  width: 25%;
+  height: 100px;
+  padding: 5px;
+}
+.connect h6 {
+  color: white;
+  text-align: center;
+  font-family: georgia;
+  font-weight: normal;
+}
+.connect img {
+  width: 10%;
+  height: auto;
+  margin-left: 7%;
+}
+.footersec p {
+  color: white;
+  text-align: center;
+  font-family: georgia;
+  font-weight: normal;
+  font-size: 12px;
+}

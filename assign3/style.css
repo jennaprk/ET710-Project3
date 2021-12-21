@@ -1,0 +1,66 @@
+body {
+  background-color: powderblue;
+}
+
+.navbar {
+  float: left;
+  display: block;
+  color: black;
+}
+
+table {
+  float: left;
+  background-color: yellow;
+}
+th {
+  width: 100px;
+  text-align: center;
+}
+td {
+  width: 100px;
+  text-align: center;
+}
+.pink {
+  background-color: pink;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+
+.paragraph {
+  border: solid red 2px;
+  background-color: white;
+  width: 425px;
+  height: 150px;
+  float: left;
+  text-align: left;
+}
+.hotpink {
+  font-family: Arial;
+  font-size: 14px;
+}
+.pinkpara {
+  font-family: Courier;
+  font-size: 14px;
+}
+.lightpink {
+  font-family: 'monotype corsiva';
+  font-size: 14px;
+}
+button {
+  background-color: lightgray;
+}
+
+.textbox {
+  width: 425px;
+  height: 150px;
+  text-align: left;
+}
+iframe {
+  width: 425px;
+  height: 300px;
+  background-color: white;
+}
